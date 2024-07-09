@@ -12,6 +12,38 @@
   </head>
 
   <style>
+      @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .animate-delay-1 {
+      animation-delay: 0.5s;
+    }
+
+    .animate-delay-2 {
+      animation-delay: 1s;
+    }
+
+    .animate-delay-3 {
+      animation-delay: 1.5s;
+    }
+
+    .animate-delay-4 {
+      animation-delay: 2s;
+    }
     .whiteNAv {
       background-color: white;
     }
@@ -132,6 +164,319 @@
             </label>
                 <input type="submit" value="Search" class="text-white bg-orange-600 p-8 cursor-pointer font-bold submitus" style="width: 300px; height: 120px;">
           </form>
+      </div>
+    </div>
+
+    <div class="container mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-center gap-8 mt-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 gap-x-1.5 w-full max-w-3xl">
+        <div class="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-1">
+          <img src="img/sea.png" alt="Ocean view" class="absolute inset-0 object-cover w-full h-full rounded-lg">
+          <div class="absolute inset-0 bg-blue-500 opacity-50 rounded-lg"></div>
+          <div
+            class="absolute mb-6 top-3 left-[-10px] bg-orange-500 text-white p-2 shadow-lg w-28 h-20 after:absolute after:top-0 after:right-[-20px] after:border-t-[40px] after:border-t-transparent after:border-l-[20px] after:border-l-orange-500 after:border-b-[40px] after:border-b-transparent">
+            <i class="fas fa-map-pin flex items-center justify-center inset-0 p-4 text-[30px]"></i>
+          </div>
+          <div class="ml-5 absolute bottom-0 left-0 right-0 text-white p-4">
+            <div class="font-bold">Activities</div>
+            <p class="mt-2 text-[#E2EEFC]">A small river named Duden flows by their place and supplies it with the necessary.</p>
+          </div>
+        </div>
+        <div class="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-2">
+          <img src="img/mountain.jpg" alt="Mountain view" class="absolute inset-0 object-cover w-full h-full rounded-lg">
+          <div class="absolute inset-0 bg-[#7AB9BC] opacity-50 rounded-lg"></div>
+          <div
+            class="absolute mb-6 top-3 left-[-10px] bg-orange-500 text-white p-2 shadow-lg w-28 h-20 after:absolute after:top-0 after:right-[-20px] after:border-t-[40px] after:border-t-transparent after:border-l-[20px] after:border-l-orange-500 after:border-b-[40px] after:border-b-transparent">
+            <i class="fas fa-map-location-dot flex items-center justify-center p-4 text-[30px]"></i>
+          </div>
+          <div class="ml-5 absolute bottom-0 left-0 right-0 text-white p-4">
+            <div class="font-bold">Activities</div>
+            <p class="mt-2 text-[#E2EEFC]">A small river named Duden flows by their place and supplies it with the necessary.</p>
+          </div>
+        </div>
+        <div class="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-3">
+          <img src="img/forest.jpg" alt="Forest view" class="absolute inset-0 object-cover w-full h-full rounded-lg">
+          <div class="absolute inset-0 bg-[#67BFCB] opacity-50 rounded-lg"></div>
+          <div
+            class="absolute mb-6 top-3 left-[-10px] bg-orange-500 text-white p-2 shadow-lg w-28 h-20 after:absolute after:top-0 after:right-[-20px] after:border-t-[40px] after:border-t-transparent after:border-l-[20px] after:border-l-orange-500 after:border-b-[40px] after:border-b-transparent">
+            <i class="fas fa-mountain-sun flex items-center justify-center p-4 inset-0 text-[30px]"></i>
+          </div>
+          <div class="ml-5 absolute bottom-0 left-0 right-0 text-white p-4">
+            <div class="font-bold">Activities</div>
+            <p class="mt-2 text-[#E2EEFC]">A small river named Duden flows by their place and supplies it with the necessary.</p>
+          </div>
+        </div>
+        <div class="relative w-full h-96 sm:w-[285px] shadow-lg rounded-lg animate-fadeInUp animate-delay-4">
+          <img src="img/bridge.jpg" alt="Bridge view" class="absolute inset-0 object-cover w-full h-full rounded-lg">
+          <div class="absolute inset-0 bg-red-500 opacity-50 rounded-lg"></div>
+          <div
+            class="absolute mb-6 top-3 left-[-10px] bg-orange-500 text-white p-2 shadow-lg w-28 h-20 after:absolute after:top-0 after:right-[-20px] after:border-t-[40px] after:border-t-transparent after:border-l-[20px] after:border-l-orange-500 after:border-b-[40px] after:border-b-transparent">
+            <i class="fas fa-signs-post flex items-center justify-center p-4 inset-0 text-[30px]"></i>
+          </div>
+          <div class="ml-5 absolute bottom-0 left-0 right-0 text-white p-4">
+            <div class="font-bold">Activities</div>
+            <p class="mt-2 text-[#E2EEFC]">A small river named Duden flows by their place and supplies it with the necessary.</p>
+          </div>
+        </div>
+      </div>
+      <div class="ml-0 sm:ml-10 max-w-3xl sm:max-w-none md:w-[874px]">
+        <span class="text-orange-600 font-bold text-4xl mb-4 animate-fadeInUp animate-delay-1" style="font-family: 'Arizonia', cursive">Welcome to Pacific</span>
+        <h2 class="text-4xl mt-4 text-gray-800 font-semibold animate-fadeInUp animate-delay-2">It's time to start your adventure</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed text-base font-normal animate-fadeInUp animate-delay-3">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <p class="mt-4 text-gray-600 leading-relaxed text-base font-normal animate-fadeInUp animate-delay-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <div class="mt-6 animate-fadeInUp animate-delay-5">
+          <button class="bg-orange-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 ease-in-out">Search Destination</button>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="relative flex justify-center w-full h-[480px] shadow-lg object-center bg-cover mt-16 rounded-lg" style="background-image: url('img/view1.jpg')">
+      <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center text-center px-8 sm:px-0">
+        <h2 class="text-4xl text-white font-semibold animate-fadeInUp animate-delay-1">Make Your Tour Memorable and Safe With Us</h2>
+        <p class="text-white text-lg mt-4 leading-relaxed animate-fadeInUp animate-delay-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <button class="bg-orange-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 ease-in-out mt-6 animate-fadeInUp animate-delay-3">Start Your Trip Now</button>
+      </div>
+    </div>
+  
+    <div class="container mx-auto max-w-6xl mt-16 p-4">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8" >Tour Destination</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+                <!-- Card 1 -->
+                <div
+                class="relative w-[350px]  h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-1 ">
+                <img src="img/home'.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <div class="absolute top-0 left-3">
+                  <span
+                    class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
+                </div>
+                <div
+                  class="absolute -bottom-10 left-0 right-0 mx-auto w-72 h-42 bg-white shadow-lg rounded-lg p-6 transform translate-y-12">
+                  <div class="mb-2">
+                    <p class="font-medium leading-9">8 Days Tour</p>
+                  </div>
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold"><a href="#">Banaue Rice Terraces</a></h3>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-location-dot w-4 h-4 text-grey-500"></i>
+                      <span class="font-normal text-base"> Banaue, Ifugao, Philippines</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-sink w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">2</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bed w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">3</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-mountain w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">Near Mountain</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Card 2 -->
+              <div class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-2">
+                <img src="img/home2 (2).jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <div class="absolute top-0 left-3">
+                  <span
+                    class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
+                </div>
+                <div
+                  class="absolute -bottom-10 left-0 right-0 mx-auto w-72 h-42 bg-white shadow-lg rounded-lg p-6 transform translate-y-12">
+                  <div class="mb-2">
+                    <p class="font-medium leading-9">8 Days Tour</p>
+                  </div>
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold"><a href="#">Banaue Rice Terraces</a></h3>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-location-dot w-4 h-4 text-grey-500"></i>
+                      <span class="font-normal text-base"> Banaue, Ifugao, Philippines</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-sink w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">2</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bed w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">3</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-mountain w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">Near Mountain</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Card 3 -->
+              <div class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-3 ">
+                <img src="img/home3.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <div class="absolute top-0 left-3">
+                  <span
+                    class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
+                </div>
+                <div
+                  class="absolute -bottom-10 left-0 right-0 mx-auto w-72 h-42 bg-white shadow-lg rounded-lg p-6 transform translate-y-12">
+                  <div class="mb-2">
+                    <p class="font-medium leading-9">8 Days Tour</p>
+                  </div>
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold"><a href="#">Banaue Rice Terraces</a></h3>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-location-dot w-4 h-4 text-grey-500"></i>
+                      <span class="font-normal text-base"> Banaue, Ifugao, Philippines</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-sink w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">2</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bed w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">3</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-umbrella-beach w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">Near Beach</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 20px !important;" class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-1">
+                <img src="img/home3.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <div class="absolute top-0 left-3">
+                  <span
+                    class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
+                </div>
+                <div
+                  class="absolute -bottom-10 left-0 right-0 mx-auto w-72 h-42 bg-white shadow-lg rounded-lg p-6 transform translate-y-12">
+                  <div class="mb-2">
+                    <p class="font-medium leading-9">8 Days Tour</p>
+                  </div>
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold"><a href="#">Banaue Rice Terraces</a></h3>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-location-dot w-4 h-4 text-grey-500"></i>
+                      <span class="font-normal text-base"> Banaue, Ifugao, Philippines</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-sink w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">2</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bed w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">3</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-umbrella-beach w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">Near Beach</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 20px !important;" class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-2">
+                <img src="img/home2 (2).jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <div class="absolute top-0 left-3">
+                  <span
+                    class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
+                </div>
+                <div
+                  class="absolute -bottom-10 left-0 right-0 mx-auto w-72 h-42 bg-white shadow-lg rounded-lg p-6 transform translate-y-12">
+                  <div class="mb-2">
+                    <p class="font-medium leading-9">8 Days Tour</p>
+                  </div>
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold"><a href="#">Banaue Rice Terraces</a></h3>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-location-dot w-4 h-4 text-grey-500"></i>
+                      <span class="font-normal text-base"> Banaue, Ifugao, Philippines</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-sink w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">2</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bed w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">3</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-mountain w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">Near Mountain</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 20px !important;" class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-3">
+                <img src="img/home'.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <div class="absolute top-0 left-3">
+                  <span
+                    class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
+                </div>
+                <div
+                  class="absolute -bottom-10 left-0 right-0 mx-auto w-72 h-42 bg-white shadow-lg rounded-lg p-6 transform translate-y-12">
+                  <div class="mb-2">
+                    <p class="font-medium leading-9">8 Days Tour</p>
+                  </div>
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold"><a href="#">Banaue Rice Terraces</a></h3>
+                  </div>
+                  <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center gap-1.5">
+                      <i class="fa-solid fa-location-dot w-4 h-4 text-grey-500"></i>
+                      <span class="font-normal text-base"> Banaue, Ifugao, Philippines</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-sink w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">2</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bed w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">3</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-mountain w-4 h-4 text-orange-500"></i>
+                        <span class="font-medium text-base">Near Mountain</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
       </div>
     </div>
 
