@@ -51,6 +51,24 @@
     .whiteNAvTransparent {
       background-color: transparent;
     }
+
+    
+    .our-blog-txt {
+            font-family: 'Arizonia', cursive;
+        }
+
+        .most-p-world {
+            font-family: 'Poppins', sans-serif;
+            transition: color 0.3s ease;
+        }
+        
+
+        .most-p-world:hover {
+            color: #f15d30;
+        }
+        .orange-11{
+            font-family: 'Poppins', sans-serif;
+        }
   </style>
   <body>
     <header id="headerColor">
@@ -246,7 +264,7 @@
                 <!-- Card 1 -->
                 <div
                 class="relative w-[350px]  h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-1 ">
-                <img src="./assets/images/home'.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <img src="./assets/images/home'.jpg" alt="home-1" class="w-full h-full object-cover rounded-lg" />
                 <div class="absolute top-0 left-3">
                   <span
                     class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
@@ -286,7 +304,7 @@
       
               <!-- Card 2 -->
               <div class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-2">
-                <img src="./assets/images/home2 (2).jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <img src="./assets/images/home2 (2).jpg" alt="home-2" class="w-full h-full object-cover rounded-lg" />
                 <div class="absolute top-0 left-3">
                   <span
                     class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
@@ -326,7 +344,7 @@
       
               <!-- Card 3 -->
               <div class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-3 ">
-                <img src="./assets/images/home3.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <img src="./assets/images/home3.jpg" alt="home-3" class="w-full h-full object-cover rounded-lg" />
                 <div class="absolute top-0 left-3">
                   <span
                     class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
@@ -364,7 +382,7 @@
                 </div>
               </div>
               <div style="margin-top: 20px !important;" class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-1">
-                <img src="./assets/images/home3.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <img src="./assets/images/home3.jpg" alt="home3" class="w-full h-full object-cover rounded-lg" />
                 <div class="absolute top-0 left-3">
                   <span
                     class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
@@ -402,7 +420,7 @@
                 </div>
               </div>
               <div style="margin-top: 20px !important;" class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-2">
-                <img src="./assets/images/home2 (2).jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <img src="./assets/images/home2 (2).jpg" alt="home2" class="w-full h-full object-cover rounded-lg" />
                 <div class="absolute top-0 left-3">
                   <span
                     class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
@@ -440,7 +458,7 @@
                 </div>
               </div>
               <div style="margin-top: 20px !important;" class="relative w-[350px] h-[300px] bg-white shadow-lg rounded-lg mb-5 animate-fadeInUp animate-delay-3">
-                <img src="./assets/images/home'.jpg" alt="" class="w-full h-full object-cover rounded-lg" />
+                <img src="./assets/images/home'.jpg" alt="home" class="w-full h-full object-cover rounded-lg" />
                 <div class="absolute top-0 left-3">
                   <span
                     class="bg-orange-600   text-white font-bold text-lg p-2 py-3 shadow-lg w-28 h-20 ">$550/person</span>
@@ -481,8 +499,67 @@
       </div>
     </div>
 
+
+    <div class="w-full h-[810px]">
+      <div class="text-center pt-20">
+          <span class="our-blog-txt text-2xl block mb-1 text-[#f15d30]">Our Blog</span>
+          <h2 class="text-4xl font-semibold leading-relaxed mb-6">Recent Post</h2>
+      </div>
+
+      <div class="popular-places flex justify-center items-center">
+          <div class="popular-place relative flex flex-col justify-center items-center">
+              <div class="orange-11 flex justify-between items-center absolute top-[-7px] left-[20px] p-[5px_15px] mb-[24px] w-[157px] h-[61px] bg-[#f15d30]">
+                  <div><span class="number-11 text-white font-poppins text-[50px] font-light leading-none">11</span></div>
+                  <div>
+                      <p class="number-2020 font-poppins text-[13px] leading-[1.4] text-white/80">2020</p>
+                      <p class="september font-poppins text-[13px] leading-[1.4] text-white/80">September</p>
+                  </div>
+              </div>
+              
+              <a href="#"><img class="popular-place-img w-[290px] h-[270px] object-cover" src="./assets/images/card-1.webp" alt="card-1"></a>
+              <div class="most-p bg-white shadow-lg  p-5 absolute bottom-[-110px]">
+                  <h3 class="most-p-world text-lg mb-4 font-semibold"><a href="#">Most Popular Place In This World</a></h3>
+                  <button class="bg-[#f15d30] text-white rounded px-3 py-1">Read more</button>
+              </div>
+          </div>
+
+          <div class="popular-place relative flex flex-col justify-center items-center mr-10 ml-10">
+              <div class="orange-11 flex justify-between items-center absolute top-[-7px] left-[20px] p-[5px_15px] mb-[24px] w-[157px] h-[61px] bg-[#f15d30]">
+                  <div><span class="number-11 text-white font-poppins text-[50px] font-light leading-none">11</span></div>
+                  <div>
+                      <p class="number-2020 font-poppins text-[13px] leading-[1.4] text-white/80">2020</p>
+                      <p class="september font-poppins text-[13px] leading-[1.4] text-white/80">September</p>
+                  </div>
+              </div>
+              
+              <a href="#"><img class="popular-place-img w-[290px] h-[270px] object-cover" src="./assets/images/card-2.webp" alt="card-2"></a>
+              <div class="most-p bg-white shadow-lg  p-5 absolute bottom-[-110px]">
+                  <h3 class="most-p-world text-lg mb-4 font-semibold"><a href="#">Most Popular Place In This World</a></h3>
+                  <button class="bg-[#f15d30] text-white rounded px-3 py-1">Read more</button>
+              </div>
+          </div>
+
+          <div class="popular-place relative flex flex-col justify-center items-center">
+              <div class="orange-11 flex justify-between items-center absolute top-[-7px] left-[20px] p-[5px_15px] mb-[24px] w-[157px] h-[61px] bg-[#f15d30]">
+                  <div><span class="number-11 text-white font-poppins text-[50px] font-light leading-none">11</span></div>
+                  <div>
+                      <p class="number-2020 font-poppins text-[13px] leading-[1.4] text-white/80">2020</p>
+                      <p class="september font-poppins text-[13px] leading-[1.4] text-white/80">September</p>
+                  </div>
+              </div>
+              
+              <a href="#"><img class="popular-place-img w-[290px] h-[270px] object-cover" src="./assets/images/card-3.webp" alt="card-3"></a>
+              <div class="most-p bg-white shadow-lg  p-5 absolute bottom-[-110px]">
+                  <h3 class="most-p-world text-lg mb-4 font-semibold"><a href="#">Most Popular Place In This World</a></h3>
+                  <button class="bg-[#f15d30] text-white rounded px-3 py-1">Read more</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
     <footer class="relative pb-[7em] h-[100%] sm:h-[100%]  bg-no-repeat ">
-      <img src="./assets/images/bg_3.jpg.webp" class="absolute object-cover size-full z-[-1] " alt="">
+      <img src="./assets/images/bg_3.jpg.webp" class="absolute object-cover size-full z-[-1] " alt="footerBack">
       <div class="container w-[1200px] mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-4 mb-[50px]">
               <div class="pt-[3rem] border-r-2">
