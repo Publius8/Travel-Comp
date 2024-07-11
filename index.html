@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Travel Demo</title>
   </head>
@@ -248,6 +249,102 @@
       
     </div>
   
+    <!-- Destination Container div -->
+    <div class=" flex flex-col items-center justify-center min-h-screen bg-[#FAFAFA]">
+      <!-- Headings -->
+      <div>
+          <p class="our-blog-txt text-center text-[#F15D30] text-3xl mb-3">Pacific Provide Places</p>
+          <p class="font-poppins text-center text-[#323232] text-5xl font-semibold mb-10">Select Your Destination</p>
+      </div>
+
+      <div id="slider-container" class="flex items-center justify-center w-full max-w-6xl mx-auto">
+          <div id="slider-track" class="w-full overflow-hidden">
+              <!-- Tours div -->
+              <div class="flex flex-wrap justify-center mb-5 transition-transform ease-in-out duration-300" id="tours-container">
+                  <!-- Tour info div -->
+                  <div class="flex relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-4" id="tours-box">
+                      <!-- Tour image div -->
+                      <div class="w-full h-[300px]">
+                          <a href="#">
+                              <img class="w-full h-full object-cover rounded-lg" src="./assets/images/ilisu-qax.jpg">
+                          </a>
+                      </div>
+          
+                      <div class="absolute top-[-12px] left-5 bg-[#F15D30] p-2">
+                          <p class="text-white font-bold">Qax, İlisu</p>
+                      </div>
+          
+                      <div class="absolute bottom-4 right-[-8px] bg-[#F15D30] p-2 rounded-l-full">
+                          <p class="text-white font-bold">3 tours</p>
+                      </div>
+                  </div>
+  
+                  <!-- Tour info div -->
+                  <div class="flex relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-4" id="tours-box">
+                      <!-- Tour image div -->
+                      <div class="w-full h-[300px]">
+                          <a href="#">
+                              <img class="w-full h-full object-cover rounded-lg" src="./assets/images/ilisu-qax.jpg">
+                          </a>
+                      </div>
+          
+                      <div class="absolute top-[-8px] left-5 bg-[#F15D30] p-2">
+                          <p class="text-white font-bold">Qax, İlisu</p>
+                      </div>
+          
+                      <div class="absolute bottom-4 right-[-8px] bg-[#F15D30] p-2 rounded-l-full">
+                          <p class="text-white font-bold">3 tours</p>
+                      </div>
+                  </div>
+  
+                  <!-- Tour info div -->
+                  <div class="flex relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-4" id="tours-box">
+                      <!-- Tour image div -->
+                      <div class="w-full h-[300px]">
+                          <a href="#">
+                              <img class="w-full h-full object-cover rounded-lg" src="./assets/images/ilisu-qax.jpg">
+                          </a>
+                      </div>
+          
+                      <div class="absolute top-[-8px] left-5 bg-[#F15D30] p-2">
+                          <p class="text-white font-bold">Qax, İlisu</p>
+                      </div>
+          
+                      <div class="absolute bottom-4 right-[-8px] bg-[#F15D30] p-2 rounded-l-full">
+                          <p class="text-white font-bold">3 tours</p>
+                      </div>
+                  </div>
+
+                  <!-- Tour info div -->
+                  <div class="flex relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-4" id="tours-box">
+                      <!-- Tour image div -->
+                      <div class="w-full h-[300px]">
+                          <a href="#">
+                              <img class="w-full h-full object-cover rounded-lg" src="./assets/images/ilisu-qax.jpg">
+                          </a>
+                      </div>
+          
+                      <div class="absolute top-[-8px] left-5 bg-[#F15D30] p-2">
+                          <p class="text-white font-bold">Qax, İlisu</p>
+                      </div>
+          
+                      <div class="absolute bottom-4 right-[-8px] bg-[#F15D30] p-2 rounded-l-full">
+                          <p class="text-white font-bold">3 tours</p>
+                      </div>
+                  </div>
+  
+                  
+              </div>
+          </div>
+      </div>
+      
+      <!-- Controls -->
+      <div class="flex gap-2">
+          <button class="w-[10px] h-[10px] rounded-full bg-[#F15D30]" id="prev"></button>
+          <button class="w-[10px] h-[10px] rounded-full bg-[#D7D7D7]" id="next"></button>
+      </div>
+    </div>
+
     <div class="relative flex justify-center w-full h-[480px] shadow-lg object-center bg-cover mt-16 rounded-lg" style="background-image: url('./assets/images/view1.jpg')">
       <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
       <div class="relative z-10 flex flex-col justify-center items-center text-center px-8 sm:px-0">
@@ -497,6 +594,83 @@
   
       </div>
     </div>
+
+    <!-- Testimonial tourist feedback -->
+    <div class="mt-20 flex flex-col items-center justify-center min-h-screen bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/images/bg-ocean.jpg');">
+      <!-- Headings -->
+      <div class="text-center">
+          <p class="our-blog-txt text-white text-3xl mb-3">Testimonial</p>
+          <p class="font-poppins text-white text-5xl font-semibold mb-10">Tourist Feedback</p>
+      </div>
+
+      <div id="slider-container" class="flex flex-wrap lg:flex-nowrap justify-center gap-4 w-full max-w-6xl mx-auto mb-5">
+          <!-- Testimonial box -->
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-3 mb-4">
+              <div class="bg-white px-9 py-6 rounded-md">
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <p class="my-6 text-[#9C9C9C] text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nihil amet atque accusantium nesciunt tempore distinctio dicta omnis ratione. Laudantium?</p>
+                  <div class="flex items-center gap-4">
+                      <div class="w-[100px] h-[100px] object-cover">
+                          <img class="w-full h-full rounded-r-full rounded-bl-full" src="./assets/images/bg-ocean.jpg"> 
+                      </div>
+                      <div class="flex flex-col text-lg">
+                          <p class="text-black">Someone Nobody</p>
+                          <p class="text-[#F15E31]">Front-end developer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Duplicate the testimonial boxes for more content -->
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-3 mb-4">
+              <div class="bg-white px-9 py-6 rounded-md">
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <p class="my-6 text-[#9C9C9C] text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nihil amet atque accusantium nesciunt tempore distinctio dicta omnis ratione. Laudantium?</p>
+                  <div class="flex items-center gap-4">
+                      <div class="w-[100px] h-[100px] object-cover">
+                          <img class="w-full h-full rounded-r-full rounded-bl-full" src="./assets/images/bg-ocean.jpg"> 
+                      </div>
+                      <div class="flex flex-col text-lg">
+                          <p class="text-black">Someone Nobody</p>
+                          <p class="text-[#F15E31]">Front-end developer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full sm:w-1/2 lg:w-1/3 px-3 mb-4">
+              <div class="bg-white px-9 py-6 rounded-md">
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <i class='bx bxs-star text-[#F15D30]'></i>
+                  <p class="my-6 text-[#9C9C9C] text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nihil amet atque accusantium nesciunt tempore distinctio dicta omnis ratione. Laudantium?</p>
+                  <div class="flex items-center gap-4">
+                      <div class="w-[100px] h-[100px] object-cover">
+                          <img class="w-full h-full rounded-r-full rounded-bl-full" src="./assets/images/bg-ocean.jpg"> 
+                      </div>
+                      <div class="flex flex-col text-lg">
+                          <p class="text-black">Someone Nobody</p>
+                          <p class="text-[#F15E31]">Front-end developer</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Controls -->
+      <div class="flex gap-2">
+          <button class="w-[10px] h-[10px] rounded-full bg-[#F15D30]" id="prev"></button>
+          <button class="w-[10px] h-[10px] rounded-full bg-[#D7D7D7]" id="next"></button>
+      </div>
+  </div>
 
 
     <div class="w-full h-[810px]">
