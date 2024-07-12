@@ -104,7 +104,10 @@ header {
     .absolutos {
         bottom: -600px;
     }
-
+    .mobileCard {
+        width: 100% !important;
+        margin-bottom: 40px !important;
+    }
     .mobilesPositons {
         display: flex !important;
         flex-direction: column !important;
@@ -169,8 +172,19 @@ header {
         background-color: black;
         width: 100% !important;
     }
+    .mobilePushDown {
+        margin-top: 750px !important;
+        margin-bottom: 40px;
+    }
+    .mobileFOoter {
+        width: 100% !important;
+    }
     h1 {
         font-size: 45px !important;
+    }
+    .mobileCard {
+        width: 100% !important;
+        margin-bottom: 40px !important;
     }
 }
 
