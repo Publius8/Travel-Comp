@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Blog</title>
+</head>
+
+<body>
+    <style>
+        @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+  
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
+      .animate-fadeInUp {
+        opacity: 0;
+        animation: fadeInUp 1s ease-out forwards;
+      }
+  
+      .animate-delay-1 {
+        animation-delay: 0.5s;
+      }
+  
+      .animate-delay-2 {
+        animation-delay: 1s;
+      }
+  
+      .animate-delay-3 {
+        animation-delay: 1.5s;
+      }
+  
+      .animate-delay-4 {
+        animation-delay: 2s;
+      }
+      .whiteNAv {
+        background-color: white;
+      }
+      .whiteNAvTransparent {
+        background-color: transparent;
+      }
+  
+      
+      .our-blog-txt {
+              font-family: 'Arizonia', cursive;
+          }
+  
+          .most-p-world {
+              font-family: 'Poppins', sans-serif;
+              transition: color 0.3s ease;
+          }
+          
+  
+          .most-p-world:hover {
+              color: #3C6380;
+          }
+          .orange-11{
+              font-family: 'Poppins', sans-serif;
+          }
+    </style>
+</head>
+<body>
+    <header id="headerColor">
+        <nav id="navScroll" class="border-gray-200 dark:bg-gray-800 dark:border-gray-700 w-[100%]" style="position: fixed; z-index: 10000000;top: 0;">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img style="width: 100px; height: 90px;" src="./assets/images/a-sleek-and-modern-website-logo-featuring-the-name-FewSWBm7SfqsEHB1hfzHug-3k6xS4j5SC6_5oW0VtGeWg-removebg-preview.png" class="h-8" alt="Flowbite Logo" />
+                  <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Planla.az</span> -->
+              </a>
+              <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                  <li>
+                    <a href="./index.html" class="block py-2 px-3 md:p-0 text-white transition-all duration-700 hover:text-[#8A9F58] ulesColor" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href="./about.html" class="block py-2 px-3 md:p-0 text-[#8A9F58] transition-all duration-700 hover:text-[#8A9F58] ulesColor">About</a>
+                  </li>
+                  <li>
+                    <a href="./destination.html" class="block py-2 px-3 md:p-0 text-white transition-all duration-700 hover:text-[#8A9F58] ulesColor">Destination</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-3 md:p-0 text-white transition-all duration-700 hover:text-[#8A9F58] ulesColor">Hotel</a>
+                  </li>
+                  <li>
+                    <a href="./blog.html" class="block py-2 px-3 md:p-0 text-white transition-all duration-700 hover:text-[#8A9F58] ulesColor">Blog</a>
+                  </li>
+                  <li>
+                    <a href="./contact.html" class="block py-2 px-3 md:p-0 text-white transition-all duration-700 hover:text-[#8A9F58] ulesColor">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="maxWidth">
+            <div class="flex flex-col gap-5 marginus text-center">
+              <h1 class="text-6xl text-white leading-[1.2] font-bold">
+                About Us</h1>
+            </div>
+          </div>
+          
+    </header>
+    <div class="container lg:w-[1200px] mx-auto">
+        <main class="py-[7em] ">
+            <div class=" grid sm:grid-cols-3 grid-cols-1 gap-[30px]">
+                <div class="relative ">
+                    <figure class="relative h-[270px] z-[1]">
+                        <a href="#" class="absolute inset-0"></a>
+                        <img src="assets/images/card-1.webp" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="z-[1] before:size-0 before:right-[-7px] before:border-l-[7px] before:border-t-[7px] before:border-l-[#8A9F58] before:border-r-transparent before:border-b-transparent before:border-t-transparent before:absolute  before:top-0 after:size-[0] after:left-[-7px] after:border-l-[7px] after:border-b-[7px] after:absolute after:top-0 after:border-b-[#8A9F58] after:border-t-transparent after:border-r-transparent after:border-l-transparent flex items-center absolute bg-[#8A9F58] w-[140px] top-[-7px] left-[20px] px-[15px] py-[5px]">
+                        <div class="w-[55px]">
+                            <span class="day text-[50px] text-white font-light leading-[1]">11</span>
+                        </div>
+                        <div class="w-[calc(100%_-_55px)] text-white">
+                            <span class="year block text-[13px] leading-[1.4]">2024</span>
+                            <span class="month block text-[13px] leading-[1.4]">İyul</span>
+                        </div>
+                    </div>
+                    <div class=" relative text p-[20px] w-[90%] mt-[-40px] bg-white mx-auto shadow shadow-lg z-[2]">
+                        <h3 class="text-[19px] mb-[16px] transition-all font-semibold hover:text-[#8A9F58] "><a href="#">Most Popular Place In This World</a></h3>
+                        <p class="text-[#999] mb-[16px]">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" class="bg-[#8A9F58] text-white rounded-[4px] px-[10px] h-[40px] leading-[24px] inline-flex justify-center items-center">Read more</a>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <figure class="relative h-[270px] z-[1]">
+                        <a href="#" class="absolute inset-0"></a>
+                        <img src="assets/images/card-2.webp" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="z-[1] before:size-0 before:right-[-7px] before:border-l-[7px] before:border-t-[7px] before:border-l-[#8A9F58] before:border-r-transparent before:border-b-transparent before:border-t-transparent before:absolute  before:top-0 after:size-[0] after:left-[-7px] after:border-l-[7px] after:border-b-[7px] after:absolute after:top-0 after:border-b-[#8A9F58] after:border-t-transparent after:border-r-transparent after:border-l-transparent flex items-center absolute bg-[#8A9F58] w-[140px] top-[-7px] left-[20px] px-[15px] py-[5px]">
+                        <div class="w-[55px]">
+                            <span class="day text-[50px] text-white font-light leading-[1]">11</span>
+                        </div>
+                        <div class="w-[calc(100%_-_55px)] text-white">
+                            <span class="year block text-[13px] leading-[1.4]">2024</span>
+                            <span class="month block text-[13px] leading-[1.4]">İyul</span>
+                        </div>
+                    </div>
+                    <div class=" relative text p-[20px] w-[90%] mt-[-40px] bg-white mx-auto shadow shadow-lg z-[2]">
+                        <h3 class="text-[19px] mb-[16px] transition-all font-semibold hover:text-[#8A9F58] "><a href="#">Most Popular Place In This World</a></h3>
+                        <p class="text-[#999] mb-[16px]">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" class="bg-[#8A9F58] text-white rounded-[4px] px-[10px] h-[40px] leading-[24px] inline-flex justify-center items-center">Read more</a>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <figure class="relative h-[270px] z-[1]">
+                        <a href="#" class="absolute inset-0"></a>
+                        <img src="assets/images/card-3.webp" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="z-[1] before:size-0 before:right-[-7px] before:border-l-[7px] before:border-t-[7px] before:border-l-[#8A9F58] before:border-r-transparent before:border-b-transparent before:border-t-transparent before:absolute  before:top-0 after:size-[0] after:left-[-7px] after:border-l-[7px] after:border-b-[7px] after:absolute after:top-0 after:border-b-[#8A9F58] after:border-t-transparent after:border-r-transparent after:border-l-transparent flex items-center absolute bg-[#8A9F58] w-[140px] top-[-7px] left-[20px] px-[15px] py-[5px]">
+                        <div class="w-[55px]">
+                            <span class="day text-[50px] text-white font-light leading-[1]">11</span>
+                        </div>
+                        <div class="w-[calc(100%_-_55px)] text-white">
+                            <span class="year block text-[13px] leading-[1.4]">2024</span>
+                            <span class="month block text-[13px] leading-[1.4]">İyul</span>
+                        </div>
+                    </div>
+                    <div class=" relative text p-[20px] w-[90%] mt-[-40px] bg-white mx-auto shadow shadow-lg z-[2]">
+                        <h3 class="text-[19px] mb-[16px] transition-all font-semibold hover:text-[#8A9F58] "><a href="#">Most Popular Place In This World</a></h3>
+                        <p class="text-[#999] mb-[16px]">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" class="bg-[#8A9F58] text-white rounded-[4px] px-[10px] h-[40px] leading-[24px] inline-flex justify-center items-center">Read more</a>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <figure class="relative h-[270px] z-[1]">
+                        <a href="#" class="absolute inset-0"></a>
+                        <img src="assets/images/card-1.webp" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="z-[1] before:size-0 before:right-[-7px] before:border-l-[7px] before:border-t-[7px] before:border-l-[#8A9F58] before:border-r-transparent before:border-b-transparent before:border-t-transparent before:absolute  before:top-0 after:size-[0] after:left-[-7px] after:border-l-[7px] after:border-b-[7px] after:absolute after:top-0 after:border-b-[#8A9F58] after:border-t-transparent after:border-r-transparent after:border-l-transparent flex items-center absolute bg-[#8A9F58] w-[140px] top-[-7px] left-[20px] px-[15px] py-[5px]">
+                        <div class="w-[55px]">
+                            <span class="day text-[50px] text-white font-light leading-[1]">11</span>
+                        </div>
+                        <div class="w-[calc(100%_-_55px)] text-white">
+                            <span class="year block text-[13px] leading-[1.4]">2024</span>
+                            <span class="month block text-[13px] leading-[1.4]">İyul</span>
+                        </div>
+                    </div>
+                    <div class=" relative text p-[20px] w-[90%] mt-[-40px] bg-white mx-auto shadow shadow-lg z-[2]">
+                        <h3 class="text-[19px] mb-[16px] transition-all font-semibold hover:text-[#8A9F58] "><a href="#">Most Popular Place In This World</a></h3>
+                        <p class="text-[#999] mb-[16px]">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" class="bg-[#8A9F58] text-white rounded-[4px] px-[10px] h-[40px] leading-[24px] inline-flex justify-center items-center">Read more</a>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <figure class="relative h-[270px] z-[1]">
+                        <a href="#" class="absolute inset-0"></a>
+                        <img src="assets/images/card-2.webp" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="z-[1] before:size-0 before:right-[-7px] before:border-l-[7px] before:border-t-[7px] before:border-l-[#8A9F58] before:border-r-transparent before:border-b-transparent before:border-t-transparent before:absolute  before:top-0 after:size-[0] after:left-[-7px] after:border-l-[7px] after:border-b-[7px] after:absolute after:top-0 after:border-b-[#8A9F58] after:border-t-transparent after:border-r-transparent after:border-l-transparent flex items-center absolute bg-[#8A9F58] w-[140px] top-[-7px] left-[20px] px-[15px] py-[5px]">
+                        <div class="w-[55px]">
+                            <span class="day text-[50px] text-white font-light leading-[1]">11</span>
+                        </div>
+                        <div class="w-[calc(100%_-_55px)] text-white">
+                            <span class="year block text-[13px] leading-[1.4]">2024</span>
+                            <span class="month block text-[13px] leading-[1.4]">İyul</span>
+                        </div>
+                    </div>
+                    <div class=" relative text p-[20px] w-[90%] mt-[-40px] bg-white mx-auto shadow shadow-lg z-[2]">
+                        <h3 class="text-[19px] mb-[16px] transition-all font-semibold hover:text-[#8A9F58] "><a href="#">Most Popular Place In This World</a></h3>
+                        <p class="text-[#999] mb-[16px]">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" class="bg-[#8A9F58] text-white rounded-[4px] px-[10px] h-[40px] leading-[24px] inline-flex justify-center items-center">Read more</a>
+                    </div>
+                </div>
+                <div class="relative ">
+                    <figure class="relative h-[270px] z-[1]">
+                        <a href="#" class="absolute inset-0"></a>
+                        <img src="assets/images/card-3.webp" class="size-full object-cover" alt="">
+                    </figure>
+                    <div class="z-[1] before:size-0 before:right-[-7px] before:border-l-[7px] before:border-t-[7px] before:border-l-[#8A9F58] before:border-r-transparent before:border-b-transparent before:border-t-transparent before:absolute  before:top-0 after:size-[0] after:left-[-7px] after:border-l-[7px] after:border-b-[7px] after:absolute after:top-0 after:border-b-[#8A9F58] after:border-t-transparent after:border-r-transparent after:border-l-transparent flex items-center absolute bg-[#8A9F58] w-[140px] top-[-7px] left-[20px] px-[15px] py-[5px]">
+                        <div class="w-[55px]">
+                            <span class="day text-[50px] text-white font-light leading-[1]">11</span>
+                        </div>
+                        <div class="w-[calc(100%_-_55px)] text-white">
+                            <span class="year block text-[13px] leading-[1.4]">2024</span>
+                            <span class="month block text-[13px] leading-[1.4]">İyul</span>
+                        </div>
+                    </div>
+                    <div class=" relative text p-[20px] w-[90%] mt-[-40px] bg-white mx-auto shadow shadow-lg z-[2]">
+                        <h3 class="text-[19px] mb-[16px] transition-all font-semibold hover:text-[#8A9F58] "><a href="#">Most Popular Place In This World</a></h3>
+                        <p class="text-[#999] mb-[16px]">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="#" class="bg-[#8A9F58] text-white rounded-[4px] px-[10px] h-[40px] leading-[24px] inline-flex justify-center items-center">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination mt-[50px] flex items-center justify-center gap-[5px]">
+                <button class="rounded-full outline-none size-[40px] inline-flex items-center justify-center border"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="rounded-full outline-none pg active size-[40px] inline-flex items-center justify-center border">1</button>
+                <button class="rounded-full outline-none pg  size-[40px] inline-flex items-center justify-center border">2</button>
+                <button class="rounded-full outline-none pg  size-[40px] inline-flex items-center justify-center border">3</button>
+                <button class="rounded-full outline-none pg  size-[40px] inline-flex items-center justify-center border">4</button>
+                <button class="rounded-full outline-none pg  size-[40px] inline-flex items-center justify-center border">5</button>
+    
+                <button class="rounded-full outline-none size-[40px] inline-flex items-center justify-center border"><i class="fa-solid fa-angle-right"></i></button>
+    
+            </div>
+        </main >
+    </div>
+
+
+
+
+
+    <footer class="relative pb-[7em] h-[100%] sm:h-[100%]  bg-no-repeat ">
+        <img src="./assets/images/bg_3.jpg.webp" class="absolute object-cover size-full z-[-1] " alt="footerBack">
+        <div class="container lg:w-[1200px] mx-auto mobileFOoter">
+            <div class="grid grid-cols-1 md:grid-cols-4 mb-[50px]">
+                <div class="pt-[3rem] border-r-2">
+                    <div class="pt-[3rem] px-[16px]">
+                        <h2 class="mb-[40px] text-[18px] font-bold">About</h2>
+                        <p class="text-[#00000080] mb-[16px]">Far far away, behind the word<br> mountains,<br> far from
+                            the countries Vokalia,<br> there live the blind texts.</p>
+                        <div class="flex items-center">
+                            <div
+                                class="rounded-full bg-[#3C6380] size-[40px] inline-flex items-center justify-center mr-[10px]">
+                                <i class="text-white fa-brands fa-twitter"></i>
+                            </div>
+                            <div
+                                class="rounded-full bg-[#3C6380] size-[40px] inline-flex items-center justify-center mr-[10px]">
+                                <i class="fa-brands fa-facebook-f text-white"></i>
+                            </div>
+                            <div
+                                class="rounded-full bg-[#3C6380] size-[40px] inline-flex items-center justify-center mr-[10px]">
+                                <i class="fa-brands fa-instagram text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-[3rem] border-r-2">
+                    <div class="pt-[3rem] px-[16px]">
+                        <h2 class="mb-[40px] text-[18px] font-bold">Infromation</h2>
+                        <ul>
+                            <li class="pb-[8px]">
+                                <a class=" text-[#00000080]" href="#">Online Enquiry</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">General Enquiries</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Booking Conditions</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Privacy and Policy</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Refund Policy</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Call Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt-[3rem] border-r-2">
+                    <div class="pt-[3rem] px-[16px]">
+                        <h2 class="mb-[40px] text-[18px] font-bold">Experience</h2>
+                        <ul>
+                            <li class="pb-[8px]">
+                                <a class=" text-[#00000080]" href="#">Adventure</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Hotel and Restaurant</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Beach</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Nature</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Camping</a>
+                            </li>
+                            <li class="py-[8px]">
+                                <a class=" text-[#00000080]" href="#">Party</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt-[3rem] border-r-2">
+                    <div class="pt-[3rem] px-[16px]">
+                        <h2 class="mb-[40px] text-[18px] font-bold">Have a Questions?</h2>
+                        <ul>
+                            <li class="flex mb-[16px]">
+                                <span class="mr-[12px] text-[#3C6380] text-[12px]"><i
+                                        class="fa-solid fa-location-dot"></i></span>
+                                <span class="text-[#00000080]">203 Fake St. Mountain View,<br> San Francisco,
+                                    California, USA</span>
+                            </li>
+                            <li class="flex mb-[16px]">
+                                <span class="mr-[12px] text-[#3C6380] text-[12px]"><i
+                                        class="fa-solid fa-phone"></i></span>
+                                <a href="tel:+2 392 3929 210" class="text-[#00000080]">+2 392 3929 210</a>
+                            </li>
+                            <li class="flex mb-[16px]">
+                                <span class="mr-[12px] text-[#3C6380] text-[12px]"><i
+                                        class="fa-solid fa-paper-plane"></i></span>
+                                <a href="mailto: info@planla.az" class="text-[#00000080]">info@planla.az</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="text-[#00000080] ">Copyright ©2024 All rights reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+    <script>
+      let navScroll = document.querySelector("#navScroll");
+      window.addEventListener("scroll", scrollMeColor);
+      let ulesColor = document.querySelectorAll(".ulesColor");
+    let headerColor = document.querySelector("#headerColor");      
+    
+    function scrollMeColor() {
+        if (window.scrollY > 0) {
+          navScroll.classList.add("whiteNAv");
+          navScroll.style.transition = "background-color 0.6s ease";
+          navScroll.style.backgroundColor = "white";
+          headerColor.style.border = "1px solid white";
+          headerColor.style.width = "100%";
+          ulesColor.forEach(function(item) {
+            item.style.color = "black";
+            item.style.transition = "color 0.6s ease";
+            item.addEventListener("mouseover", handleMouseOver);
+            item.addEventListener("mouseout", handleMouseOut);
+          });
+        } else {
+          navScroll.classList.remove("whiteNAv");
+          navScroll.style.backgroundColor = "";
+          headerColor.style.border = "1px solid black";
+      
+          ulesColor.forEach(function(item) {
+            item.style.color = "";
+            item.removeEventListener("mouseover", handleMouseOver);
+            item.removeEventListener("mouseout", handleMouseOut);
+          });
+        }
+      }
+      
+      function handleMouseOver(event) {
+        event.target.style.color = "#3C6380";
+      }
+      
+      function handleMouseOut(event) {
+        event.target.style.color = "black";
+      }
+      
+      </script>
+</body>
+</html>
