@@ -7,7 +7,7 @@ body {
 }
 header {
     background-image: url('../images/pexels-pok-rie-33563-136317.jpg');
-    min-height: 85vh;
+    min-height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ header {
     margin: 0 auto;
 }
 .marginus {
-    margin-top: 400px;
+    margin-top: 200px;
 }
 .absolutos {
     bottom: 20px;
