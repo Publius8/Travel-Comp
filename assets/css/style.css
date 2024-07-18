@@ -6,7 +6,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 .maxWidth {
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
 }
 .marginus {
@@ -16,7 +16,7 @@ body {
     bottom: 20px;
 }
 header {
-    background-image: url('../images/pexels-8moments-709881.jpg');
+    background-image: url('../images/1200x675_cmsv2_50d85912-9137-5997-b632-d5783df02d69-7869982.webp');
     min-height: 90vh;
     background-attachment: fixed;
     background-position: center;
