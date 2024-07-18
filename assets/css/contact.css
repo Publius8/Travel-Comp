@@ -6,8 +6,8 @@ body {
     font-family: "Poppins", sans-serif;
 }
 header {
-    background-image: url('../images/v3fhdu9qndab1.jpg');
-    min-height: 100vh;
+    background-image: url('../images/pexels-pok-rie-33563-136317.jpg');
+    min-height: 85vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ header {
     margin-top: 400px;
 }
 .absolutos {
-    bottom: -70px;
+    bottom: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -95,7 +95,7 @@ header {
         width: 100% !important;
     }
     header {
-        min-height: 80vh;
+        min-height: 60vh;
         background-attachment: scroll;
     }
 
