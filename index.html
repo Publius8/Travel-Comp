@@ -14,7 +14,10 @@
   </head>
 
   <style>
-      @keyframes fadeInUp {
+    html,body {
+      overflow-x: hidden;
+    }
+@keyframes fadeInUp {
       from {
         opacity: 0;
         transform: translateY(20px);
@@ -130,8 +133,8 @@
         </div>
       </div>
     </header>
-    <div class="maxWidth">
-      <div class="absolute absolutos mobilesPositons">
+    <div>
+      <div class="absolute absolutos mobilesPositons" style="margin-left: 30px;">
         <div class="flex flex-row gap-3 mobilesPositonsButtons">
           <button
             class="text-gray-500 transition-all duration-300 border-transparent bg-white rounded px-10 py-3 font-bold"
@@ -146,37 +149,30 @@
         </div>
           <form class="flex flex-row items-center gap-10 bg-white rounded-lg mt-[-7px] shadow-xl mobilesPositons">
             <label
-              class="flex flex-col gap-3 text-[#3C6380] p-5 border font-bold" style="border-right: 1px solid gray; width: 100%;"
+              class="flex flex-col gap-3 text-[#3C6380] p-5 border font-bold" style="border-right: 1px solid gray; "
             >
               DESTINATION
               <div class="flex flex-row items-center">
               <i class="fa fa-search text-gray-600" aria-hidden="true"></i><input type="search" class="text-gray-600 p-3 outline-none cursor-pointer" placeholder="Search place" />
             </div>
             </label>
-            <label class="flex flex-col gap-3 text-[#3C6380] p-5 cursor-pointer font-bold" style="border-right: 1px solid gray; width: 100%;">
+            <label class="flex flex-col gap-3 text-[#3C6380] p-5 cursor-pointer font-bold" style="border-right: 1px solid gray;">
               CHECK-IN DATE
               <input type="date" class="text-gray-600 p-3 outline-none cursor-pointer" />
             </label>
-            <label class="flex flex-col gap-3 text-[#3C6380] p-5 cursor-pointer font-bold" style="border-right: 1px solid gray;width: 100%;">
+            <label class="flex flex-col gap-3 text-[#3C6380] p-5 cursor-pointer font-bold" style="border-right: 1px solid gray;">
               CHECK-OUT DATE
               <input type="date" class="text-gray-600 p-3 outline-none cursor-pointer" />
             </label>
-            <label class="flex flex-col gap-3 text-[#3C6380] p-5 font-bold" style="width: 100%;">
+            <label class="flex flex-col gap-3 text-[#3C6380] p-5 font-bold" style="border-right: 1px solid gray;">
               PRICE LIMIT
-              <select class="text-gray-600 p-3 cursor-pointer">
-                <option>$100</option>
-                <option>$1000</option>
-                <option>$10000</option>
-                <option>$100000</option>
-                <option>$500</option>
-                <option>$5000</option>
-                <option>$5000</option>
-                <option>$200</option>
-                <option>$2000</option>
-                <option>$20000</option>
-              </select>
+              <input type="number" placeholder="from" class="text-gray-600 p-3 cursor-pointer" />
             </label>
-                <input type="submit" value="Search" class="text-white bg-[#3C6380] p-8 cursor-pointer font-bold submitus" style="width: 300px; height: 120px;">
+            <label class="flex flex-col gap-3 text-[#3C6380] p-5 font-bold">
+              PRICE LIMIT
+              <input type="number" placeholder="from" class="text-gray-600 p-3 cursor-pointer" />
+            </label>
+                <!-- <input type="submit" value="Search" class="text-white bg-[#3C6380] p-8 cursor-pointer font-bold submitus" style="width: 300px; height: 120px;"> -->
           </form>
       </div>
     </div>
