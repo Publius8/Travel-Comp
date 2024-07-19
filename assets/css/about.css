@@ -17,14 +17,55 @@ body {
 }
 header {
     background-image: url('../images/pexels-souvenirpixels-1619317.jpg');
-    min-height: 50vh;
+    min-height: 90vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     border: 0.1px solid transparent;
 }
+/* Additional styles if needed */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.bottom-0 {
+    bottom: 0;
+}
+.left-0 {
+    left: 0;
+}
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-opacity-50 {
+    background-opacity: 0.5;
+}
+.text-white {
+    color: white;
+}
+.p-4 {
+    padding: 1rem;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.transition-opacity {
+    transition: opacity 0.3s ease;
+}
+.hover\:opacity-100:hover {
+    opacity: 1;
+}
+.text-center {
+    text-align: center;
+}
+.text-lg {
+    font-size: 1.125rem; /* Adjust as needed */
+}
+
 
 @media (max-width: 1200px) {
     .marginus {
