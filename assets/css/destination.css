@@ -16,8 +16,9 @@ body {
     bottom: 20px;
 }
 header {
-    background-image: url('../images/pexels-george-ketselashvili-228925-746716.jpg');
+
     min-height: 85vh;
+    background-color: #578BA0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,6 +195,7 @@ header {
         width: 100% !important;
         margin-bottom: 40px !important;
     }
+    
 }
 
 @media (max-width:1400px) {
