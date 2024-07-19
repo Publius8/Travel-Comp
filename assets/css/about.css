@@ -17,7 +17,7 @@ body {
 }
 header {
     background-image: url('../images/pexels-souvenirpixels-1619317.jpg');
-    min-height: 90vh;
+    min-height: 50vh;
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
