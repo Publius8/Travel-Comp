@@ -17,7 +17,7 @@ body {
 }
 header {
 
-    min-height: 85vh;
+    min-height: 800px;
     background-color: #578BA0;
     background-attachment: fixed;
     background-position: center;
