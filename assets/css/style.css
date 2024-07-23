@@ -17,7 +17,7 @@ body {
 }
 header {
     background-image: url('../images/sea.png');
-    min-height: 800px;
+    min-height: 650px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

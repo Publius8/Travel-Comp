@@ -16,8 +16,7 @@ body {
     bottom: 20px;
 }
 header {
-
-    min-height: 800px;
+    min-height: 650px;
     background-color: #578BA0;
     background-attachment: fixed;
     background-position: center;
@@ -25,6 +24,7 @@ header {
     background-size: cover;
     position: relative;
     border: 0.1px solid transparent;
+    background-image: url('../images/pexels-andreimike-1271619\ \(1\).jpg')
 }
 
 

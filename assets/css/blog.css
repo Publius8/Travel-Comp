@@ -16,10 +16,10 @@ body {
     bottom: -70px;
 }
 header {
-    background-image: url('../images/pexels-pixabay-273886.jpg');
+    background-image: url('../images/pexels-souvenirpixels-1619317.jpg');
     min-height: 420px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
